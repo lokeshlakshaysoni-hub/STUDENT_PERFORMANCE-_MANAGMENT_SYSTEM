@@ -1,10 +1,9 @@
 // server.js  (project root: student-performance-system/)
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const crypto = require("crypto");
-const db = require("./config/db");
+const db = require("./config/db"); // db.js also loads the .env file
 
 const app = express();
 
